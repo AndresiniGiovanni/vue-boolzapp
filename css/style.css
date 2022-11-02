@@ -1,0 +1,122 @@
+.container-whatsapp {
+  width: auto;
+  height: auto;
+}
+
+.debug {
+  border: 1px solid black;
+}
+.back-up{
+    background-color: #009688 ;
+}
+.my-cont{
+    margin-top: 100px;
+}
+.sidebar {
+  width: 40%;
+}
+.sideheader,.mainheader,.type-message{
+    height: 60px;
+}
+.mainheader,.sideheader{
+    background-color: #eaeaea;
+}
+.type-message{
+    background-color: #f3eeea;
+}
+.mainchat {
+  width: 60%;
+}
+
+.chat {
+  overflow-y: scroll;
+}
+
+.backgroundchat {
+  background-image: url(../img/mine.jpg);
+  width: 100%;
+  height: 700px;
+}
+
+.header {
+  width: 100%;
+}
+
+.img-profile {
+  width: 50px;
+}
+.img-chat{
+    width: 70px;
+    background-color: white;
+}
+
+.ltIcon,
+.ctIcon,
+.rtIcon {
+  font-size: 20px;
+}
+
+.spacing-messages {
+  width: 85%;
+}
+.invio {
+  background-color: #d5f9ba;
+}
+
+.risposta {
+  background-color: white;
+}
+
+.risposta,
+.invio {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.btn-bell {
+  background-color: white;
+
+  border: 0px;
+  border-radius: 50%;
+
+  padding: 0px 8px;
+  margin: 15px 5px 10px;
+  margin-left: 10px;
+}
+.mybell {
+  color: #8edafc;
+
+  padding: 3px;
+  font-size: 20px;
+}
+
+.desktop-notification{
+    background-color: #8edafc;
+
+    height: 70px;
+}
+
+.grey-text{
+    color: #617d84 ;
+}
+
+.lightgrey-background{
+    background-color: #e9ebeb;
+}
+
+.smile{
+    font-size: 20px;
+}
+
+.input-message{
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+
+    width: 80%;
+}
+
+.input-icons{
+    font-size: 25px;
+}
