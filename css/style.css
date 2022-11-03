@@ -1,67 +1,51 @@
-.container-whatsapp {
-  width: auto;
-  height: auto;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .debug {
   border: 1px solid black;
 }
-.back-up{
-    background-color: #009688 ;
-}
-.my-cont{
+#app {
   height: 100vh;
+  width: 100%;
+  background: linear-gradient(179.75deg, #009688 23.12%, #d9dbd5 23.13%);
 }
 .sidebar {
   width: 40%;
+  height: 80%;
+  background-color: white;
 }
-.sideheader,.mainheader,.type-message{
-    height: 60px;
+
+.mainheader,
+.sideheader {
+  background-color: #eaeaea;
+  height: 60px;
 }
-.mainheader,.sideheader{
-    background-color: #eaeaea;
+.type-message {
+  background-color: #f3eeea;
+  height: 55px;
 }
-.type-message{
-    background-color: #f3eeea;
-}
+
 .mainchat {
   width: 60%;
 }
-
 .chat {
   overflow-y: scroll;
-}
-
-.backgroundchat {
+  height: calc(100% - 115px);
   background-image: url(../img/mine.jpg);
-  width: 100%;
-  height: 800px;
 }
-
-.header {
-  width: 100%;
-}
-
 .img-profile {
   width: 50px;
 }
-.img-chat{
-    width: 70px;
-    background-color: white;
+.img-chat {
+  width: 70px;
+  background-color: white;
 }
 
 .ltIcon,
 .ctIcon,
 .rtIcon {
   font-size: 20px;
-}
-
-.spacing-messages {
-  width: 85%;
-}
-.invio {
-  background-color: #d5f9ba;
 }
 
 .risposta {
@@ -71,7 +55,6 @@
 .risposta,
 .invio {
   width: 250px;
-  height: 50px;
   border-radius: 10px;
 }
 
@@ -92,32 +75,58 @@
   font-size: 20px;
 }
 
-.desktop-notification{
-    background-color: #8edafc;
-
-    height: 70px;
+.desktop-notification {
+  background-color: #8edafc;
 }
 
-.grey-text{
-    color: #617d84 ;
+.grey-text {
+  color: #617d84;
 }
 
-.lightgrey-background{
-    background-color: #e9ebeb;
+.active:hover {
+  transition: 0.3s;
+  background-color: #e9ebeb;
 }
 
-.smile{
-    font-size: 20px;
+.message-wrapper {
+  position: relative;
+  min-width: 40%;
+  max-width: 60%;
+  font-size: 15px;
+  margin: 5px 10px;
+  background-color: white;
+  padding: 15px 15px 10px;
+  border-radius: 10px;
 }
 
-.input-message{
-    height: 40px;
-    border-radius: 5px;
-    border: 0px;
-
-    width: 80%;
+.message-chat {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.input-icons{
-    font-size: 25px;
+.message-chat .sent {
+  align-self: flex-end;
+  background-color: #d5f9ba;
+}
+
+.smile {
+  font-size: 20px;
+}
+
+.input-message {
+  height: 30px;
+  border-radius: 5px;
+  border: 0px;
+
+  width: 80%;
+}
+
+.input-icons {
+  font-size: 25px;
+}
+
+.myoverflow {
+  overflow-y: scroll;
 }
