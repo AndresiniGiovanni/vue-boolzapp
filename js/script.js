@@ -11,6 +11,7 @@ createApp({
   data() {
     return {
       currentChat: 0,
+      newMessage: "",
 
       contacts: [
         {
@@ -195,7 +196,29 @@ createApp({
   },
   methods: {
     setChat(id) {
-      this.currentChat = this.contacts.findIndex((item) => item.id === id);     
+      this.currentChat = this.contacts.findIndex((item) => item.id === id);
+    },
+    sendMessage() {
+      const d = new Date();
+      let newdate = d.toDateString();
+      const newSentMessage = {
+        date: newdate,
+        message: this.newMessage,
+        status: "sent",
+      };
+      this.contacts[this.currentChat].messages.push(newSentMessage);
+      this.newMessage = "";
+
+      setTimeout(() => {
+        const d = new Date();
+        let newdate = d.toDateString();
+        const newSentMessage = {
+          date: newdate,
+          message: "ok",
+          status: "received",
+        };
+        this.contacts[this.currentChat].messages.push(newSentMessage);
+      }, 1000);
     },
   },
 }).mount("#app");
