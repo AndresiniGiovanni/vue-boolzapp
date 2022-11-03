@@ -12,6 +12,7 @@ createApp({
     return {
       currentChat: 0,
       newMessage: "",
+      searchTerm: "",
 
       contacts: [
         {
@@ -194,11 +195,20 @@ createApp({
       ],
     };
   },
+  computed: {
+    filteredContacts() {
+      return this.contacts.filter((item) => {
+        const name = item.name.toLowerCase();
+        return name.includes(this.searchTerm.toLowerCase());
+      });
+    },
+  },
   methods: {
     setChat(id) {
       this.currentChat = this.contacts.findIndex((item) => item.id === id);
     },
     sendMessage() {
+      if (!this.newMessage) return;
       const d = new Date();
       let newdate = d.toDateString();
       const newSentMessage = {
