@@ -2,40 +2,62 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.debug {
-  border: 1px solid black;
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: green white;
 }
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d5f9ba;
+  border-radius: 20px;
+}
+
 #app {
   height: 100vh;
   width: 100%;
   background: linear-gradient(179.75deg, #009688 23.12%, #d9dbd5 23.13%);
 }
+
 .sidebar {
   width: 40%;
-  height: 80%;
+  height: 90%;
   background-color: white;
 }
-
+.my-container {
+  height: 90%;
+}
 .mainheader,
 .sideheader {
   background-color: #eaeaea;
-  height: 60px;
+  height: 8%;
 }
 .type-message {
   background-color: #f3eeea;
-  height: 55px;
+  height: 7%;
 }
 
 .mainchat {
   width: 60%;
+  height: 90%;
 }
 .chat {
-  overflow-y: scroll;
-  height: calc(100% - 115px);
   background-image: url(../img/mine.jpg);
+  height: 85%;
+  overflow-y: scroll;
 }
 .img-profile {
   width: 50px;
+  margin-top: 0.3rem;
 }
 .img-chat {
   width: 70px;
@@ -63,22 +85,25 @@ html {
 
   border: 0px;
   border-radius: 50%;
-
-  padding: 0px 8px;
-  margin: 15px 5px 10px;
-  margin-left: 10px;
+  margin-top: 15px;
+  margin-left: 0.5rem;
+  margin-right: 0.7rem;
+  width: 3rem;
+  height: 3rem;
 }
 .mybell {
   color: #8edafc;
-
-  padding: 3px;
   font-size: 20px;
 }
 
 .desktop-notification {
   background-color: #8edafc;
+  height: 10%;
 }
-
+#cerca{
+  border: 0px;
+  width: 80%;
+}
 .grey-text {
   color: #617d84;
 }
@@ -86,6 +111,7 @@ html {
 .active:hover {
   transition: 0.3s;
   background-color: #e9ebeb;
+  border-radius: 20px;
 }
 
 .message-wrapper {
@@ -116,11 +142,13 @@ html {
 }
 
 .input-message {
-  height: 30px;
+  width: 80%;
+  height: 2.5rem; 
+
+ 
   border-radius: 5px;
   border: 0px;
 
-  width: 80%;
 }
 
 .input-icons {
@@ -129,4 +157,5 @@ html {
 
 .myoverflow {
   overflow-y: scroll;
+  height: 70%;
 }
