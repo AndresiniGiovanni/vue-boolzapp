@@ -100,16 +100,19 @@ html {
   background-color: #8edafc;
   height: 10%;
 }
-#cerca{
+#cerca {
   border: 0px;
   width: 80%;
 }
 .grey-text {
   color: #617d84;
 }
-
-.active:hover {
-  transition: 0.3s;
+.lightgrey-background:hover {
+  background-color: #e9ebeb;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.active {
   background-color: #e9ebeb;
   border-radius: 20px;
 }
@@ -143,12 +146,10 @@ html {
 
 .input-message {
   width: 80%;
-  height: 2.5rem; 
+  height: 2.5rem;
 
- 
   border-radius: 5px;
   border: 0px;
-
 }
 
 .input-icons {
