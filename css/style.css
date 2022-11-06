@@ -108,12 +108,12 @@ html {
   color: #617d84;
 }
 .lightgrey-background:hover {
-  background-color: #e9ebeb;
+  background-color: rgba(213, 249, 186, 0.5);
   border-radius: 20px;
   transition: 0.4s;
 }
 .active {
-  background-color: #e9ebeb;
+  background-color: rgba(213, 249, 186, 0.5);
   border-radius: 20px;
 }
 
@@ -150,6 +150,10 @@ html {
 
   border-radius: 5px;
   border: 0px;
+}
+.myset{
+  all: unset;
+  padding-top: 0.5rem;
 }
 
 .input-icons {

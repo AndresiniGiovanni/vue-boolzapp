@@ -1,10 +1,3 @@
-// currentChat: 0;
-// getChat(id){
-//   this.currentChat = this.contacts.findIndex((item) =>{
-//     return id === item.id
-//   })
-// }
-
 const { createApp } = Vue;
 
 createApp({
@@ -224,7 +217,7 @@ createApp({
         let newdate = d.toDateString();
         const newSentMessage = {
           date: newdate,
-          message: "ok",
+          message: "Ok",
           status: "received",
         };
         this.contacts[this.currentChat].messages.push(newSentMessage);

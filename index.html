@@ -77,7 +77,7 @@
                 name=""
                 id="cerca"
                 placeholder="Cerca o inizia una nuova chat"
-                class="col-10"
+                class="col-10 myset"
                 v-model.trim="searchTerm"
               />
             </div>
@@ -102,9 +102,9 @@
 
               <div>
                 <h5 class="mt-3 ms-3">{{item.name}}</h5>
-                <div class="ms-3 grey-text">
+                <span class="ms-3 grey-text">
                   {{item.messages[item.messages.length -1].message}}
-                </div>
+                </span>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@
               </span>
               <span class="input-message"
                 ><input
-                  class="w-100 input-message"
+                  class="w-100 input-message myset"
                   type="text"
                   v-model.trim="newMessage"
                   @keyup.enter="sendMessage"
